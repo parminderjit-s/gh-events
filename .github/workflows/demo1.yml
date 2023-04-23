@@ -1,5 +1,8 @@
 name: Events Demo 1
-on: ...
+on: [push, workflow_dispatch]
+push:
+  branches:
+      - 'releases/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
