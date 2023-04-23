@@ -1,8 +1,7 @@
 name: Events Demo 1
 on:
-push:
-  branches:
-      - 'releases/**'
+pull_request:
+  types: opened
 workflow_dispatch:
 jobs:
   deploy:
